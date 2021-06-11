@@ -32,6 +32,6 @@ Note that this is a separate nested docker and network within the one on your Ma
 
 Once you have started the container you can do a `docker stop ecsanywhere` to pause it and `docker start ecsanywhere` to start it up again when you need - it'll retain the ECS cluster membership until you do a `docker rm` and remove the container from your system.
 
-To remove it from both SSM and ECS Anywhere go to the Fleet Manager in the SMS service and deregister it there.
+To remove it from both SSM and ECS Anywhere go to the Fleet Manager in the SSM service and deregister it there.
 
 CREDIT - the Dockerfile/approach was inspired by https://github.com/nikovirtala/amazonlinux-dind
