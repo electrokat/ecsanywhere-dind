@@ -5,7 +5,7 @@ In order to run ECS Anywhere you need a systemd and Docker. This repository is a
 The Dockerfile in this folder will build an Amazon Linux 2 container that has both systemd and docker that can serve as an ECS Anywhere sandbox for us.
 
 On a machine with Docker Desktop installed and running run the following commands:
-1. `git clone https://github.com/nikovirtala/amazonlinux-dind`
+1. `git clone https://github.com/jasonumiker/ecsanywhere-dind`
 1. `cd ecsanywhere-dind`
 1. `docker build -t ecsanywhere-dind .`
 1. `docker run -d --privileged --name ecsanywhere -p 8080-8090:8080-8090 ecsanywhere-dind:latest`
