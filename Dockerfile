@@ -18,7 +18,4 @@ RUN rm -f /lib/systemd/system/multi-user.target.wants/* \
 RUN amazon-linux-extras install epel docker && \
     systemctl enable docker
 
-RUN curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose && \
-    chmod +x /usr/local/bin/docker-compose
-
 CMD ["/usr/sbin/init"]
